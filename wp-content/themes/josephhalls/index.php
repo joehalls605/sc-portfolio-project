@@ -9,7 +9,6 @@
         endwhile;
 
         get_template_part("templates/home");
-
         get_template_part("templates/parts/product-highlights");
         get_template_part("templates/parts/certified-experience");
         get_template_part("templates/parts/cta-section");

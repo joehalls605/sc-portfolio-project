@@ -14,8 +14,8 @@
         </ul>
         </div>
         <div class="about-buttons">
-            <button id="aboutButton">About →</button>
-            <button id="ctaButton">Contact →</button>
+            <a href="#certifications"><button id="aboutButton">About →</button></a>
+            <a href="#cta"><button id="ctaButton">Contact →</button></a>
         </div>
     </div>
     <div class="about-right">
