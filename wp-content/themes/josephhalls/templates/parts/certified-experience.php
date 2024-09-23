@@ -23,7 +23,6 @@
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/bcs.png" alt="BCS Logo">
             </div>
         </a>
-
         <!-- Item Three -->
         <a href="https://www.netacad.com/" target="blank">
             <div class="experience-item" id="item-three">

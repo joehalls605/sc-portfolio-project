@@ -13,7 +13,6 @@ body {
 p {
     font-family: "Open Sans";
     color: #f8f8f8;
-    
 }
 
 a {
@@ -339,6 +338,13 @@ h3 {
     align-items: center;
     gap: 20px;
     box-shadow: 0 0 20px rgba(0, 34, 34, 0.3);
+}
+
+
+.cta-section p{
+ margin-top: 20px;
+ margin-bottom: 20px;
+
 
 }
 
@@ -376,8 +382,22 @@ h3 {
     display: flex;
     align-items: center;
     margin-top: 10px;
-    gap: 10px;
+    gap: 17px;
 }
+
+.cta-links img{
+  height: 62px;
+  margin-top: 14px;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.cta-links img:hover{
+    height: 62px;
+    margin-top: 14px;
+    transform: translateY(-3px);
+  }
+  
 
 .cta-image img {
     width: 60px;
