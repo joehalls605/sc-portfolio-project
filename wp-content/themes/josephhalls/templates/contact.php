@@ -1,6 +1,9 @@
 <div class="main-content">
 <div class="about-section">
 <?php
+/*
+Template Name: Contact Page
+*/
 get_header(); ?>
 <?php
 if (have_posts()) :
