@@ -32,7 +32,7 @@ a {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin-top: 35px;
+    margin-top: 40px;
 }
 
 .about-tech-stack ul {
@@ -161,6 +161,10 @@ h3 {
     color: #308d93;
 }
 
+.product-highlights img:hover{
+    transform: translateY(7%);
+}
+
 .highlight {
     display: flex;
     flex-direction: column;
@@ -208,13 +212,21 @@ h3 {
 
 .certified-experience {
     background-color: #191919;
-    margin-top: 150px;
-    margin-bottom: 200px;
+    margin-top: 90px;
+    margin-bottom: 150px;
 
 }
 
 .certified-experience p{
  width: 90%;
+}
+
+.certified-experience-row{
+    margin-bottom: 25px;
+}
+
+.certified-experience-row p{
+    margin-top: 5px;
 }
 
 .experience-row{
@@ -223,6 +235,39 @@ h3 {
 
 .experience-row-header{
     margin-top: 6px;
+}
+
+
+.experience-row-profile {
+    display: flex;
+    flex-direction: row;
+    margin-top: 150px;
+}
+
+.experience-row-profile img{
+    width: 300px;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 5px;
+}
+
+.experience-row-profile img:hover{
+    transform: translateY(-7px);
+
+}
+
+.experience-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.experience-right{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -238,8 +283,7 @@ h3 {
 
 .about-section {
     padding: 10px;
-    margin: 0 auto;
-    max-width: 1200px;
+    margin-top: 40px;
 }
 
 .about-content {
@@ -446,7 +490,7 @@ h3 {
 }
 
 .social-links img {
-    width: 150px;
+    width: 180px;
     height: auto;
     display: block;
 }
@@ -533,12 +577,20 @@ h3 {
     height: auto;
 }
 
-.highlights-grid, .experience-grid {
+.highlights-grid{
     display: flex;
     gap: 20px;
     justify-content: flex-start;
     flex-wrap: wrap;
-    margin-top: 30px;
+    margin-top: 40px;
+}
+
+.experience-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-top: 40px;
 }
 
 .highlight h3, .experience-item h3 {
@@ -561,6 +613,11 @@ h3 {
     transition: opacity 0.5s ease-in-out; 
     opacity: 1;
     box-shadow: 2px 2px 20px rgba(121, 121, 121, 0.3);
+}
+
+#experience-image{
+    box-shadow: 2px 2px 20px rgba(121, 121, 121, 0.3);
+    width: 250px;
 }
 
 #dynamicImage.fade-out {

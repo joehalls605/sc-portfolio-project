@@ -2,7 +2,7 @@
     <div class="about-content">
         <div class="about-left">
         <h2>Web Developer</h2>
-        <p>Delivering practical, user-friendly products that solve real-world challenges. Based in Suffolk, United Kingdom.</p>
+        <p>Delivering practical, user-friendly products that solve real-world challenges. Based in Suffolk, United Kingdom</p>
         <div class="about-tech-stack">
         <ul>
             <p>Tech Stack |</p>
@@ -19,7 +19,7 @@
         </div>
     </div>
     <div class="about-right">
-            <img id="dynamicImage" src="<?php echo get_template_directory_uri(); ?>/assets/images/joe-small.png" alt="Placeholder Image">
+            <img  id="dynamicImage" src="<?php echo get_template_directory_uri(); ?>/assets/images/joe-small.png" alt="Placeholder Image">
         </div>
     </div>
 </section>

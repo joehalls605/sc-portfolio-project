@@ -1,11 +1,10 @@
 <section id="certifications">
     <div class="certified-experience">
-        <h2>I solve problems and deliver solutions</h2>
-        <p>Creating seamless digital experiences that align with both user needs and business objectives. I enjoy tackling complex challenges and building intuitive software solutions that deliver real impact.</p>
-
+        <div class="certified-experience-row">
+        <h2>Certified Experience</h2>
+        <p>I utilise certifications to stay ahead in the growing tech landscape and create digital products that solve problems. <br>When tackling complex challenges, I building simple software solutions that deliver real impact.</p>
+        </div>
     <div class="experience-row">
-        <h3 class="experience-row-header">Certified experience</h3>
-        <p>Certifications to stay ahead in the ever-evolving tech landscape.</p>
     <div class="experience-grid">
         <!-- Item One -->
         <a href="https://www.open.ac.uk/courses/computing-it/degrees/bsc-computing-it-software-q62-soft" target="_blank">
@@ -31,6 +30,16 @@
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/cisco.png" alt="Cisco Academy Logo">
             </div>
         </a>
+    </div>
+    </div>
+    <div class="experience-row-profile">
+    <div class="experience-left">
+    <h2>Behind The Development</h2>
+    <p>When I'm not coding, you'll find me following along with the wider Tech industry, reading about World War Two history, and spending time walking my Springer Spaniel in the Suffolk countryside.</p>
+    </div>
+    
+    <div class="experience-right">
+        <img id="experience-image" src="<?php echo get_template_directory_uri(); ?>/assets/images/image-joe.png">
     </div>
     </div>
     </div>
