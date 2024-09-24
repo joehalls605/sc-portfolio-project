@@ -261,14 +261,8 @@ h3 {
 }
 
 @media (max-width: 768px) {
-    .cta-section {
-        flex-direction: column;
-        text-align: center;
-    }
 
     .cta-left, .cta-right {
-        justify-content: center;
-        align-items: center;
     }
 
     .cta-left {
@@ -280,8 +274,7 @@ h3 {
     }
 
     .about-right {
-        text-align: center;
-        margin-top: 30px;
+        margin-top: 40px;
     }
 
     .site-navigation ul {
@@ -292,6 +285,25 @@ h3 {
         flex: 1 1 100%;
         max-width: 100%;
     }
+    .about-buttons{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    .about-tech-stack{
+        font-size: 15px;
+        align-items: center;
+        justify-content: center;
+    }
+    .about-tech-stack img{
+        width: 40px;
+        border-radius: 5px;
+    }
+    .site-title{
+        font-size: 30px;
+    }
+    
 }
 
 .about-right img {
@@ -344,8 +356,6 @@ h3 {
 .cta-section p{
  margin-top: 20px;
  margin-bottom: 20px;
-
-
 }
 
 .cta-section h2 {
@@ -444,16 +454,20 @@ h3 {
 @media (max-width: 768px) {
     .cta-section {
         flex-direction: column;
-        text-align: center;
+        width: 75%;
+        margin-bottom: 20px;
     }
 
     .cta-left, .cta-right {
         justify-content: center;
-        align-items: center;
     }
 
     .cta-left {
         margin-bottom: 20px;
+    }
+    
+    .cta-right {
+        margin-top: 15px;
     }
 }
 
@@ -480,6 +494,24 @@ h3 {
         flex: 1 1 100%;
         max-width: 100%;
     }
+    .product-highlights{
+        margin-top: 50px;
+    }
+    .product-highlights .highlight{
+        padding: 20px;
+        width: 90%;
+    }
+    .certified-experience{
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+    .experience-grid{
+        margin-top: 20px;
+    }
+    .experience-grid .experience-item{
+        width: 90%;
+    }
+  
 }
 
 .experience-item {
@@ -624,4 +656,10 @@ h3 {
 
 .wpforms-field-label span.required {
     color: #308d93 !important; 
+}
+
+@media (max-width: 768px) {
+.site-navigation ul li a{
+    font-size: 15px;
+}
 }
