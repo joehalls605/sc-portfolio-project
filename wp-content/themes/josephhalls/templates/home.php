@@ -19,13 +19,13 @@
         </div>
     </div>
     <div class="about-right">
-            <img  id="dynamicImage" src="<?php echo get_template_directory_uri(); ?>/assets/images/joe-small.png" alt="Placeholder Image">
-            <div class="line-effects">
-                  <div class="line-effect"></div>
-                  <div class="line-effect"></div>
-                  <div class="line-effect"></div>
-                  <div class="line-effect"></div>
-             </div>
+            <div class="about-right">
+            <div class="circle circle1"></div>
+            <div class="circle circle2"></div>
+            <div class="circle circle3"></div>
+            <div class="circle circle4"></div>
+            <img id="dynamicImage" src="<?php echo get_template_directory_uri(); ?>/assets/images/joe-small.png" alt="Placeholder Image">
+        </div>
         </div>
     </div>
 </section>

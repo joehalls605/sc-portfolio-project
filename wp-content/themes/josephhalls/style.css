@@ -222,7 +222,7 @@ h3 {
 }
 
 .certified-experience-row{
-    margin-bottom: 25px;
+    margin-bottom: 30px;
     justify-content: center;
     align-items: center;
 }
@@ -304,6 +304,10 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    overflow: visible;
+    width: 100%; 
+    height: 400px;
 }
 
 @media (max-width: 768px) {
@@ -320,7 +324,7 @@ h3 {
     }
 
     .about-right {
-        margin-top: 40px;
+        margin-top: 50px;
     }
 
     .site-navigation ul {
@@ -358,6 +362,70 @@ h3 {
     border-radius: 50%;
     object-fit: cover;
 }
+
+.about-right{
+    position: relative;
+    overflow: hidden;
+}
+
+.circle {
+    width: 50px;
+    height: 50px; 
+    border-radius: 20%;
+    background-color: #cccccc; 
+    opacity: 0.5; 
+    position: absolute; 
+    z-index: 2;
+  }
+
+.circle1{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    bottom: 70px;
+    background-color: #308d93;
+    animation: moveCircle 7s infinite linear;
+    opacity: 0.5;
+}
+
+.circle2{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    bottom: 50px;
+    background-color: #308d93;
+    animation: moveCircle 8s infinite linear reverse;
+    opacity: 0.7;
+}
+
+.circle3{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    bottom: 70px;
+    background-color: #4b4b4b;
+    animation: moveCircle 6s infinite linear reverse;
+    opacity: 0.3;
+}
+
+.circle4{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    bottom: 70px;
+    background-color: #4b4b4b;
+    animation: moveCircle 6s infinite linear reverse;
+    opacity: 0.3;
+}
+
+@keyframes moveCircle{
+    0% {transform: translate(0,0);}
+    25% {transform: translate(100%,0);}
+    50% {transform: translate(100%, 100%);}
+    75% {transform: translate(0, 100%);}
+    100% {transform: translate(0,0);}
+}
+
 
 .about-buttons{
     display: flex;
@@ -549,7 +617,7 @@ h3 {
     }
     .certified-experience{
         margin-top: 50px;
-        margin-bottom: 30px;
+        margin-bottom: 40px;
     }
     .experience-grid{
         margin-top: 20px;
@@ -557,7 +625,18 @@ h3 {
     .experience-grid .experience-item{
         width: 90%;
     }
-  
+    .experience-row-profile{
+        display: flex;
+        flex-direction: column;
+        margin-top: 100px;
+        
+    }
+    .experience-right{
+    padding-top: 30px;
+    }
+    .experience-left h2{
+        margin: 0;
+    }
 }
 
 .experience-item {
@@ -615,11 +694,13 @@ h3 {
     transition: opacity 0.5s ease-in-out; 
     opacity: 1;
     box-shadow: 2px 2px 20px rgba(121, 121, 121, 0.3);
+    z-index: 1;
 }
 
 #experience-image{
     box-shadow: 2px 2px 20px rgba(121, 121, 121, 0.3);
     width: 250px;
+    cursor: pointer;
 }
 
 #dynamicImage.fade-out {
@@ -632,16 +713,10 @@ h3 {
 #wpforms-21-field_3-container {
     margin: 10px;
     padding: 20px;
-    color: #ffffff !important;
+    color: #ffffff;
     font-family: 'Open Sans', sans-serif;
 }
 
-/* Reset margins for contact page */
-.page-template-templates-contact,
-.page-template-templatescontact-php {
-    margin: 0 !important;
-    padding: 0 !important;
-}
 
 /* Ensure consistent main content styling */
 .page-template-templates-contact .main-content,

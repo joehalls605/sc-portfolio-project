@@ -34,8 +34,8 @@
     </div>
     <div class="experience-row-profile">
     <div class="experience-left">
-    <h2>Behind The Development</h2>
-    <p>Between software projects, you'll find me following along with the wider Tech industry, reading about World War Two history, and spending time walking my Springer Spaniel in the Suffolk countryside.</p>
+    <h2>Behind The Code</h2>
+    <p>Between software projects, you'll find me following along with the wider Tech industry, reading about World War Two history, and spending time walking my Springer Spaniel in the Suffolk countryside.</p> 
     </div>
     
     <div class="experience-right">

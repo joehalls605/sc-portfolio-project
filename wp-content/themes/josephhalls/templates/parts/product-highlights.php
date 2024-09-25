@@ -17,6 +17,7 @@
                     <img src="/wp-content/themes/josephhalls/assets/images/github-g.png" alt="GitHub Link">
             </div>
             </a>
+           
 
             <a href="https://github.com/joehalls605/KickIQ" target="blank" class="read-more">
             <div class="highlight" id="item-three">
