@@ -369,8 +369,6 @@ h3 {
 }
 
 .circle {
-    width: 50px;
-    height: 50px; 
     border-radius: 20%;
     background-color: #cccccc; 
     opacity: 0.5; 
@@ -383,18 +381,18 @@ h3 {
     height: 25px;
     position: absolute;
     bottom: 70px;
-    background-color: #308d93;
-    animation: moveCircle 7s infinite linear;
+    background-color: #42c4ce;
+    animation: moveCircle 7s infinite linear; /* Infinite animation to repeat, linear - animation will progress at constant rate, revearse direction of the animation*/
     opacity: 0.5;
 }
 
 .circle2{
-    width: 30px;
-    height: 30px;
+    width: 15px;
+    height: 15px;
     position: absolute;
     bottom: 50px;
-    background-color: #308d93;
-    animation: moveCircle 8s infinite linear reverse;
+    background-color: #f5f5f5;
+    animation: moveCircle 4s infinite linear reverse; 
     opacity: 0.7;
 }
 
@@ -402,17 +400,7 @@ h3 {
     width: 30px;
     height: 30px;
     position: absolute;
-    bottom: 70px;
-    background-color: #4b4b4b;
-    animation: moveCircle 6s infinite linear reverse;
-    opacity: 0.3;
-}
-
-.circle4{
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    bottom: 70px;
+    bottom: 50px;
     background-color: #4b4b4b;
     animation: moveCircle 6s infinite linear reverse;
     opacity: 0.3;
@@ -420,10 +408,10 @@ h3 {
 
 @keyframes moveCircle{
     0% {transform: translate(0,0);}
-    25% {transform: translate(100%,0);}
-    50% {transform: translate(100%, 100%);}
-    75% {transform: translate(0, 100%);}
-    100% {transform: translate(0,0);}
+    25% {transform: translate(100%,0);}  /* Moves the element horizontally to the right*/
+    50% {transform: translate(100%, 100%);} /* Moves an element diagonally to bottom right corner*/
+    75% {transform: translate(100%, 100%);} /* Element remains at bottom right corner*/
+    100% {transform: translate(0,0);} /* Element starts at initial position*/
 }
 
 
@@ -738,7 +726,7 @@ h3 {
 #wpforms-21-field_1-container label,
 #wpforms-21-field_2-container label,
 #wpforms-21-field_3-container label {
-    color: #ffffff !important; 
+    color: #ffffff;
     font-family: 'Open Sans', sans-serif !important;
 }
 
