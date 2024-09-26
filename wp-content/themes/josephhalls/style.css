@@ -212,7 +212,7 @@ h3 {
 
 .certified-experience {
     background-color: #191919;
-    margin-top: 90px;
+    margin-top: 120px;
     margin-bottom: 150px;
 
 }
@@ -227,10 +227,6 @@ h3 {
     align-items: center;
 }
 
-.certified-experience-row p{
-    margin-top: 5px;
-}
-
 .experience-row{
     margin-top: 40px;
 }
@@ -243,7 +239,9 @@ h3 {
 .experience-row-profile {
     display: flex;
     flex-direction: row;
-    margin-top: 150px;
+    margin-top: 170px;
+    justify-content: center;
+    align-items: center;
 }
 
 .experience-row-profile img{
@@ -404,6 +402,16 @@ h3 {
     background-color: #4b4b4b;
     animation: moveCircle 6s infinite linear reverse;
     opacity: 0.3;
+}
+
+.circle4{
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    bottom: 50px;
+    background-color: #f5f5f5;
+    animation: moveCircle 4s infinite linear; 
+    opacity: 0.7;
 }
 
 @keyframes moveCircle{
@@ -617,6 +625,8 @@ h3 {
         display: flex;
         flex-direction: column;
         margin-top: 100px;
+        justify-content: center;
+        align-items: center;
         
     }
     .experience-right{
@@ -630,7 +640,7 @@ h3 {
 .experience-item {
     padding: 20px;
     border-radius: 8px;
-    width: 320px;
+    width: 330px;
     height: 250px;
     background-color: #333333;
     color: #ffffff;
@@ -657,7 +667,6 @@ h3 {
 .experience-grid {
     display: flex;
     gap: 20px;
-    justify-content: flex-start;
     flex-wrap: wrap;
     margin-top: 40px;
 }
@@ -678,7 +687,7 @@ h3 {
 }
 
 
-#dynamicImage {
+#profileImage {
     transition: opacity 0.5s ease-in-out; 
     opacity: 1;
     box-shadow: 2px 2px 20px rgba(121, 121, 121, 0.3);
@@ -691,11 +700,11 @@ h3 {
     cursor: pointer;
 }
 
-#dynamicImage.fade-out {
+#profileImage.fade-out {
     opacity: 0;
 }
 
-/* Container styles */
+
 #wpforms-21-field_1-container,
 #wpforms-21-field_2-container,
 #wpforms-21-field_3-container {
@@ -706,19 +715,18 @@ h3 {
 }
 
 
-/* Ensure consistent main content styling */
 .page-template-templates-contact .main-content,
 .page-template-templatescontact-php .main-content {
     margin-top: 0;
-    padding-top: 40px; /* Adjust this value to match your homepage */
+    padding-top: 40px; 
 }
 
-/* Align h2 consistently across pages */
+
 .page-template-templates-contact h2,
 .page-template-templatescontact-php h2,
 .about-section h2 {
     margin-top: 0;
-    padding-top: 20px; /* Adjust as needed */
+    padding-top: 20px; 
 }
 
 
@@ -730,7 +738,7 @@ h3 {
     font-family: 'Open Sans', sans-serif !important;
 }
 
-/* Input and textarea styles when focused */
+/* Input and textarea styles when focused
 #wpforms-21-field_1-container input:focus,
 #wpforms-21-field_2-container input:focus,
 #wpforms-21-field_3-container input:focus,
@@ -741,6 +749,10 @@ h3 {
 #wpforms-21-field_2-container select:focus,
 #wpforms-21-field_3-container select:focus {
     outline: none; 
+} */
+:root body .main-content div.wpforms-container-full :is(textarea,input,select):focus {
+    border: none 0px;
+    box-shadow: none;
 }
 
 /* Input, textarea, and select styles */
@@ -787,6 +799,19 @@ h3 {
     color: #ffffff; 
 }
 
+#wpforms-24-field_3{
+    width: 650px;
+}
+
+#wpforms-submit-24{
+    background-color: #308d93;
+}
+
+
+#wpforms-submit-24:hover{
+    background-color: #004f55 !important;
+}
+
 
 /* Heading styles */
 .wp-block-heading {
@@ -802,3 +827,48 @@ h3 {
     font-size: 15px;
 }
 }
+
+.progress-bar{
+    width: 90%;
+    height: 10px;
+    margin-top: 50px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 40px;
+    box-shadow: 2px 2px 20px rgba(121, 121, 121, 0.3);
+}
+
+.progress-bar-fill{
+    height: 100%;
+    background-color: #308d93;
+    transition: width 0.5s ease;
+}
+
+
+.experience-right-row{
+    display: flex;
+    flex-direction: column;
+}
+
+.experience-right-row p{
+   color: #ffffff;
+   text-align: center;
+}
+
+#technology-quotes{
+    margin-top: 30px;
+}
+
+#contact-container{
+    background-color: #232323;;
+    padding: 70px;
+    border-radius: 3px;
+}
+
+#contact-container img{
+    width: 200px;
+    margin-top: 40px;
+    
+}
+

@@ -2,8 +2,8 @@
     <div class="certified-experience">
         <div class="certified-experience-row">
         <h2>Certified Experience</h2>
-        <p>I utilise certifications to stay ahead in the growing tech landscape and create digital products that solve problems. <br>When tackling complex challenges, I building simple software solutions that deliver real impact.</p>
-        </div>
+        <p id="certified-experience-row-text">I utilise certifications to stay ahead in the growing tech landscape and create digital products that solve problems. <br>When tackling complex challenges, I building simple software solutions that deliver real impact.</p>   
+    </div>
     <div class="experience-row">
     <div class="experience-grid">
         <!-- Item One -->
@@ -31,15 +31,21 @@
             </div>
         </a>
     </div>
-    </div>
     <div class="experience-row-profile">
     <div class="experience-left">
     <h2>Behind The Code</h2>
-    <p>Between software projects, you'll find me following along with the wider Tech industry, reading about World War Two history, and spending time walking my Springer Spaniel in the Suffolk countryside.</p> 
+    <p>Between software projects, you'll find me following along with the wider Tech industry, reading about World War Two history, teaching my nephew programming, and spending time walking my Springer Spaniel in Suffolk.</p> 
+    <div class="progress-bar">
+                <div class="progress-bar-fill">
+                </div>
     </div>
+    <p id="technology-quotes">Learning JavaScript tools 📚</p>    
+</div>
     
     <div class="experience-right">
-        <img id="experience-image" src="<?php echo get_template_directory_uri(); ?>/assets/images/image-joe.png">
+        <div class="experience-right-row">
+        <img id="experience-image">
+    </div>
     </div>
     </div>
     </div>

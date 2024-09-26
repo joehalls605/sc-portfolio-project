@@ -20,6 +20,5 @@
         get_template_part("templates/parts/cta-section");
     }
     ?>
-
 </main>
 <?php get_footer(); ?>
