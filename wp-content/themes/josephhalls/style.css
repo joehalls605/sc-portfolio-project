@@ -32,7 +32,7 @@ a {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin-top: 40px;
+    margin-top: 45px;
 }
 
 .about-tech-stack ul {
@@ -151,7 +151,7 @@ h3 {
     align-items: center;
     justify-content: center;
     margin-top: 100px;
-    padding: 20px 0px 40px 20px;
+    padding: 30px 0px 65px 35px;
     color: #ffffff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 34, 34, 0.3);
@@ -239,7 +239,7 @@ h3 {
 .experience-row-profile {
     display: flex;
     flex-direction: row;
-    margin-top: 170px;
+    margin-top: 180px;
     justify-content: center;
     align-items: center;
 }
@@ -310,19 +310,12 @@ h3 {
 
 @media (max-width: 768px) {
 
-    .cta-left, .cta-right {
-    }
-
     .cta-left {
         margin-bottom: 20px;
     }
 
     .about-content {
         flex-direction: column;
-    }
-
-    .about-right {
-        margin-top: 50px;
     }
 
     .site-navigation ul {
@@ -350,6 +343,9 @@ h3 {
     }
     .site-title{
         font-size: 30px;
+    }
+    .about-right{
+        height:312px;
     }
     
 }
@@ -609,7 +605,7 @@ h3 {
     }
     .product-highlights .highlight{
         padding: 20px;
-        width: 90%;
+        flex: 100% 0 0;
     }
     .certified-experience{
         margin-top: 50px;
@@ -619,7 +615,7 @@ h3 {
         margin-top: 20px;
     }
     .experience-grid .experience-item{
-        width: 90%;
+        flex: 100% 0 0;
     }
     .experience-row-profile{
         display: flex;
@@ -661,19 +657,27 @@ h3 {
     gap: 20px;
     justify-content: flex-start;
     flex-wrap: wrap;
-    margin-top: 40px;
+    margin-top: 50px;
 }
+
+
+.highlights-grid{
+    width: 100%;
+}
+
 
 .experience-grid {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
-    margin-top: 40px;
+    margin-top: 45px;
+    margin-bottom: 60px;
 }
 
 .highlight h3, .experience-item h3 {
-    margin-top: 0;
+    margin-top: 13px;
     color: #ffffff;
+    font-size: 19px;
 }
 
 .highlight p, .experience-item p {
@@ -829,7 +833,7 @@ h3 {
 }
 
 .progress-bar{
-    width: 90%;
+    width: 85%;
     height: 10px;
     margin-top: 50px;
     background-color: #f0f0f0;
@@ -857,18 +861,57 @@ h3 {
 }
 
 #technology-quotes{
-    margin-top: 30px;
+    background-color:#232323;
+    border-radius: 4px;
+    padding: 18px;
+    width: 210px;
+    margin-top: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); 
 }
+
 
 #contact-container{
     background-color: #232323;;
-    padding: 70px;
+    padding-top: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 30px;
     border-radius: 3px;
 }
+
+
+#contact-container p{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
 
 #contact-container img{
     width: 200px;
     margin-top: 40px;
     
 }
+
+.animate {
+    animation: bounce 1s;
+  }
+  
+  @keyframes bounce {
+    0% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(10px);
+    }
+    50% {
+      transform: translateX(0);
+    }
+    75% {
+      transform: translateX(5px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
 

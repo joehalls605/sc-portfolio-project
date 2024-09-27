@@ -6,7 +6,7 @@
 /*
 Template Name: Contact Page
 */?>
-<h2>Contact Form</h2>
+<h2>Get in touch</h2>
 <p>Please share some details about your project, your goals, and availability to speak.</p>
 <?php
 if (have_posts()) :
@@ -15,7 +15,7 @@ if (have_posts()) :
     endwhile;
 endif;
 ?>
-<img src="<?php echo get_template_directory_uri(); ?>/assets/images/computer.gif" alt="LinkedIn">
+<img src="<?php echo get_template_directory_uri(); ?>/assets/images/coding-light.gif" alt="LinkedIn">
 
 </div>
 </div>
