@@ -157,6 +157,7 @@ h3 {
     box-shadow: 0 0 10px rgba(0, 34, 34, 0.3);
 }
 
+
 .product-highlights a {
     color: #308d93;
 }
@@ -186,6 +187,11 @@ h3 {
     text-decoration: none;
 }
 
+.highlight:hover{
+    background-color: #181818;
+}
+
+
 .highlight .link-wrapper {
     position: absolute;
     bottom: 20px;
@@ -207,7 +213,7 @@ h3 {
 }
 
 #certifications {
-    padding: 20px; 
+    padding: 5px; 
 }
 
 .certified-experience {
@@ -231,6 +237,11 @@ h3 {
     margin-top: 40px;
 }
 
+#certified-experience-row-text{
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
 .experience-row-header{
     margin-top: 6px;
 }
@@ -242,6 +253,7 @@ h3 {
     margin-top: 180px;
     justify-content: center;
     align-items: center;
+    align-content: center;
 }
 
 .experience-row-profile img{
@@ -261,6 +273,12 @@ h3 {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    margin-left: 40px;
+}
+
+
+.experience-left p{
+  margin: 0;
 }
 
 .experience-right{
@@ -469,7 +487,7 @@ h3 {
 }
 
 .cta-button {
-    background-color: #308d93;
+    background-color: #016269;
     margin-top: 10px;
     color: white;
     font-weight: 600; 
@@ -642,6 +660,20 @@ h3 {
     color: #ffffff;
     position: relative;
     text-decoration: none;
+    box-shadow: 2px 2px 20px rgba(22, 22, 22, 0.3);
+    transition: opacity 0.5s ease-in-out; 
+}
+
+.experience-item:hover{
+    padding: 20px;
+    border-radius: 8px;
+    width: 330px;
+    height: 250px;
+    background-color: #313131;
+    color: #ffffff;
+    position: relative;
+    text-decoration: none;
+    box-shadow: 2px 2px 20px rgba(22, 22, 22, 0.3);
 }
 
 .experience-item img {
@@ -668,7 +700,7 @@ h3 {
 
 .experience-grid {
     display: flex;
-    gap: 20px;
+    gap: 25px;
     flex-wrap: wrap;
     margin-top: 45px;
     margin-bottom: 60px;
@@ -783,7 +815,7 @@ h3 {
 
 /* Submit button styles */
 #wpforms-submit-21 {
-    background-color: #308d93;
+    background-color: #006f77;
     margin-left: 30px;
 }
 
@@ -791,10 +823,7 @@ h3 {
     background-color: #004f55 !important;
 }
 
-#wpforms-submit{
-    background-color: #308d93 !important;;
 
-}
 
 .wpforms-container-full input[type=submit],
 .wpforms-container-full button[type=submit],
@@ -808,12 +837,15 @@ h3 {
 }
 
 #wpforms-submit-24{
-    background-color: #308d93;
+    background-color: #006168;
+    width: 130px;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 
 #wpforms-submit-24:hover{
     background-color: #004f55 !important;
+    transform: translateY(-3px);
 }
 
 
@@ -834,10 +866,10 @@ h3 {
 
 .progress-bar{
     width: 85%;
-    height: 10px;
+    height: 13px;
     margin-top: 50px;
     background-color: #f0f0f0;
-    border-radius: 5px;
+    border-radius: 0px 13px 13px 0px;
     overflow: hidden;
     margin-top: 40px;
     box-shadow: 2px 2px 20px rgba(121, 121, 121, 0.3);
@@ -862,12 +894,14 @@ h3 {
 
 #technology-quotes{
     background-color:#232323;
-    border-radius: 4px;
+    border-radius: 0px;
     padding: 18px;
-    width: 210px;
-    margin-top: 20px;
+    width: 211px;
+    height: 16px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); 
+    border-radius: 0px 0px 13px 13px;
 }
+
 
 
 #contact-container{
@@ -880,6 +914,10 @@ h3 {
 }
 
 
+#contact-container h2{
+    animation: bounce 1s;
+}
+
 #contact-container p{
     margin-top: 50px;
     margin-bottom: 50px;
@@ -890,6 +928,10 @@ h3 {
     width: 200px;
     margin-top: 40px;
     
+}
+
+#contact-container h2{
+margin-top: 20px;
 }
 
 .animate {
@@ -914,4 +956,12 @@ h3 {
     }
   }
 
+  .cursor{
+    cursor: pointer;
+    border-width: 2px;
+    border-color: #191919;
+  }
 
+  .motion-transition{
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  }

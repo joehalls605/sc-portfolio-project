@@ -2,7 +2,7 @@
     <div class="about-content">
         <div class="about-left">
         <h2>Web Developer</h2>
-        <p>Delivering practical, user-friendly products that solve real-world challenges. Based in Suffolk, United Kingdom</p>
+        <p>Delivering practical, user-friendly software that solves real-world problems. Based in Suffolk, United Kingdom</p>
         <div class="about-tech-stack">
         <ul>
             <p>Tech Stack |</p>

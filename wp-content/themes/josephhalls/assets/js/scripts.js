@@ -44,7 +44,9 @@ function updateExperienceImage() {
   const progressBarFill = document.querySelector(".progress-bar-fill");
   let progress = 0;
   let currentQuoteIndex = 0;
-
+  const progressBarElement = document.querySelector(".progress-bar");
+  progressBarElement.classList.add("animate");
+  progressBarElement.classList.remove("animate");
 
   // UPDATE PROGRESS BAR FUNCTION
   function updateProgressBar() {
@@ -58,15 +60,20 @@ function updateExperienceImage() {
     }
     if(progress >= 100){
       const technologyQuotesElement = document.getElementById("technology-quotes");
-      technologyQuotesElement.textContent = "Energy refresh complete 🚀";
+      technologyQuotesElement.textContent = "Let's work on a project 🚀";
       technologyQuotesElement.classList.add("animate");
+      technologyQuotesElement.addEventListener("click", scrollToCta);
+      technologyQuotesElement.classList.add("cursor");
+
+      const progressBarElement = document.querySelector(".progress-bar");
+      progressBarElement.classList.add("animate");
       updateExperienceImage();
     }
 
     // Update quote every 3 seconds
     if (progress % 30 === 0) { 
       // progresss % 30 calculates the remainder of the progress divided by 30 without leaving a remainder.
-      const learningQuotes = ["Learning HTML DOM 💻", "Learning CSS libraries 📚", "Learning React state 👨🏼‍💻"];
+      const learningQuotes = ["Manipulating HTML DOM 💻", "Learning CSS libraries 📚", "Testing React properties 👨🏼‍💻"];
 
       currentQuoteIndex = (currentQuoteIndex + 1) % learningQuotes.length; 
       // Incrementing currentQuoteIndex by one, then dividing learningQuotes by length, this resets the array after reaching the array length
@@ -76,5 +83,12 @@ function updateExperienceImage() {
   
       const technologyQuotesElement = document.getElementById("technology-quotes");
       technologyQuotesElement.textContent = randomQuote;
+    }
+  }
+
+  function scrollToCta(){
+    const ctaSection = document.getElementById("cta");
+    if (ctaSection) {
+      ctaSection.scrollIntoView({ behavior: "smooth" });
     }
   }
