@@ -59,9 +59,11 @@ function updateExperienceImage() {
       
     }
     if(progress >= 100){
+      progressBarFill.classList.add("progress-bar-fill-complete");
+
       const technologyQuotesElement = document.getElementById("technology-quotes");
       technologyQuotesElement.classList.add("technology-quotes-complete");
-      technologyQuotesElement.textContent = "Let's work on a project 🚀";
+      technologyQuotesElement.textContent = "Let's work on a project →";
       technologyQuotesElement.classList.add("animate");
       technologyQuotesElement.addEventListener("click", scrollToCta);
       technologyQuotesElement.classList.add("cursor");

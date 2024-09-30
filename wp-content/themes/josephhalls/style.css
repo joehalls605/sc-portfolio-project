@@ -438,11 +438,15 @@ h3 {
 
 
 .about-buttons{
-    display: flex;
-    gap: 20px;
+   display: flex;
+   flex-direction: row;
+   gap: 20px;
 }
 
-.about-buttons button {
+
+.about-buttons button{
+    display: flex;
+    width: 140px;
     background-color: #308d93;
     color: white;
     font-weight: 600; 
@@ -454,6 +458,7 @@ h3 {
     text-align: center;
     transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 .about-buttons button:hover {
     background-color: #004f55;
     transform: translateY(-3px);
@@ -900,6 +905,11 @@ h3 {
     border-radius: 0px 13px 13px 0px; 
 }
 
+
+.progress-bar-fill-complete{
+    animation: none;
+}
+
 @keyframes moveGradient{
     0%{
         background-position: 0% 0%; /* Gradient starts at the left */
@@ -943,11 +953,16 @@ Key points:
     background-color:#232323;
     border-radius: 0px;
     padding: 18px;
-    font-size: 18px;
+    font-size: 22px;
     width: 211px;
-    height: 18px;
+    height: 19px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
     border-radius: 0px 0px 13px 13px;
+    transition: width 0.5s ease;
+}
+
+.technology-quotes-complete:hover{
+    background-color:#242424;
 }
 
 
