@@ -60,6 +60,7 @@ function updateExperienceImage() {
     }
     if(progress >= 100){
       const technologyQuotesElement = document.getElementById("technology-quotes");
+      technologyQuotesElement.classList.add("technology-quotes-complete");
       technologyQuotesElement.textContent = "Let's work on a project 🚀";
       technologyQuotesElement.classList.add("animate");
       technologyQuotesElement.addEventListener("click", scrollToCta);

@@ -620,6 +620,7 @@ h3 {
     }
     .product-highlights{
         margin-top: 50px;
+        padding: 30px 0px 65px 6px;
     }
     .product-highlights .highlight{
         padding: 20px;
@@ -864,6 +865,13 @@ h3 {
 }
 }
 
+/* 
+
+- I use background-size, background-position, to control how the gradient moves.
+- I animate the background-position to create a moving effect as the bar fills.
+- The keyframes will move the gradient to the right over time, creating the effect of flowing or moving the gradient.
+*/
+
 .progress-bar{
     width: 85%;
     height: 13px;
@@ -876,10 +884,38 @@ h3 {
 }
 
 .progress-bar-fill{
-    height: 100%;
-    background-color: #308d93;
+
+    /* This makes the progress bar fill to 100% height of its container*/
+    height: 100%; 
+    /* 
+    90deg creates a mooth colour tranistion that moves horizontally
+    background-size controlls how big the gradient is compared to the element.
+    The background-size property, is set to (width) 300%, (height) 100%.
+    ?? This is key because it allows the gradient to shift left or right as it animates.
+    */
+    background-image: linear-gradient(90deg, #285e61, #308d93, #4fd1c5);
+    background-size: 300% 100%; 
+    animation: moveGradient 30s linear infinite; /* Animating the gradient movement*/
     transition: width 0.5s ease;
+    border-radius: 0px 13px 13px 0px; 
 }
+
+@keyframes moveGradient{
+    0%{
+        background-position: 0% 0%; /* Gradient starts at the left */
+    }
+    100%{
+        background-position: 100% 0%; /* Gradient moves to the right */
+    }
+}
+
+/*
+Key points: 
+1. Gradient Setup - Linear gradient in progress-bar-fill specifies the colors.
+2. Moving the Gradient - The background-size: 300% 100% means the graident is 3 times wider than the progress bar. This allows the gradient to scroll across the bar.
+3. Animation - The moveGradient animation moves the background-position from 0%, 100%, causing the gradient to shift from left to right. This creates a flowing effect that continously.
+
+*/
 
 
 .experience-right-row{
@@ -893,12 +929,24 @@ h3 {
 }
 
 #technology-quotes{
+    /* background-color:#232323; */
+    border-radius: 0px;
+    padding-top: 18px;
+    font-size: 15px;
+    width: 211px;
+    height: 18px;
+    /* box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);  */
+    border-radius: 0px 0px 13px 13px;
+}
+
+.technology-quotes-complete{
     background-color:#232323;
     border-radius: 0px;
     padding: 18px;
+    font-size: 18px;
     width: 211px;
-    height: 16px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); 
+    height: 18px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
     border-radius: 0px 0px 13px 13px;
 }
 
